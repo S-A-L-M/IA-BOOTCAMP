@@ -1,10 +1,10 @@
 # Retail AI Insights: Inteligencia de Clientes con ML Híbrido
 
-## 🚀 Resumen del Proyecto
+##  Resumen del Proyecto
 
 Este MVP fue desarrollado durante un **Reto Crítico de 6 horas** en un Bootcamp Empresarial. El objetivo fue transformar datos transaccionales crudos (50,000 registros) en una herramienta estratégica de toma de decisiones para el sector Retail. Implementamos un **motor de Machine Learning Híbrido** que permite segmentar clientes automáticamente y entender las reglas de negocio detrás de cada grupo.
 
-## 🧠 Metodología y Arquitectura
+##  Metodología y Arquitectura
 
 El proyecto sigue una arquitectura limpia, separando la lógica de datos de la interfaz de usuario para garantizar escalabilidad y mantenimiento:
 
@@ -13,7 +13,7 @@ El proyecto sigue una arquitectura limpia, separando la lógica de datos de la i
 3. **IA Explicable (Decision Tree)**: Modelo supervisado para extraer reglas lógicas y validar la segmentación con una división de datos 70/30.
 4. **Optimización de Rendimiento**: Ingesta de datos vía CSV con almacenamiento en caché (`@st.cache_data`) para respuestas en milisegundos.
 
-## 📊 Resultados de Impacto (KPIs)
+## Resultados de Impacto (KPIs)
 
 - **Exactitud del Modelo (Accuracy)**: 90.1% en la clasificación de clientes nuevos.
 - **Alcance del Análisis**: 5,708 clientes únicos identificados.
@@ -21,7 +21,7 @@ El proyecto sigue una arquitectura limpia, separando la lógica de datos de la i
 - **Ticket Promedio Global**: $1,312.67.
 - **Segmentación Crítica**: Identificación de 1,017 clientes VIP que sostienen la rentabilidad del negocio.
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 - **Lenguaje**: Python 3.9+
 - **Análisis de Datos**: Pandas, Numpy
@@ -29,7 +29,7 @@ El proyecto sigue una arquitectura limpia, separando la lógica de datos de la i
 - **Visualización**: Plotly Express, Matplotlib
 - **Interfaz**: Streamlit (Layout basado en Tabs corporativos)
 
-## 📂 Estructura del Repositorio
+##  Estructura del Repositorio
 
 ```
 IA-BOOTCAMP/
@@ -70,7 +70,7 @@ IA-BOOTCAMP/
 
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios mayores antes de crear un pull request.
 
-## 📝 Licencia
+##  Licencia
 
 Este proyecto fue desarrollado con fines educativos durante un bootcamp empresarial.
 
