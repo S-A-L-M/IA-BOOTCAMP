@@ -1,35 +1,35 @@
-# Retail AI Insights: Inteligencia de Clientes con ML Híbrido
+# Retail AI Insights: Customer Intelligence with Hybrid ML
 
-##  Resumen del Proyecto
+## Project Overview
 
-Este MVP fue desarrollado durante un **Reto Crítico de 6 horas** en un Bootcamp Empresarial. El objetivo fue transformar datos transaccionales crudos (50,000 registros) en una herramienta estratégica de toma de decisiones para el sector Retail. Implementamos un **motor de Machine Learning Híbrido** que permite segmentar clientes automáticamente y entender las reglas de negocio detrás de cada grupo.
+This MVP was developed during a **6-hour Critical Challenge** in a Corporate Bootcamp. The goal was to transform raw transactional data (50,000 records) into a strategic decision-making tool for the Retail sector. We implemented a **Hybrid Machine Learning engine** that automatically segments customers and uncovers the business rules behind each group.
 
-##  Metodología y Arquitectura
+## Methodology and Architecture
 
-El proyecto sigue una arquitectura limpia, separando la lógica de datos de la interfaz de usuario para garantizar escalabilidad y mantenimiento:
+The project follows a clean architecture, separating data logic from the user interface to ensure scalability and maintainability:
 
-1. **Ingeniería RFM**: Procesamiento de datos para calcular Recencia, Frecuencia y Valor Monetario por cliente.
-2. **Aprendizaje No Supervisado (K-Means)**: Descubrimiento de 4 clústeres naturales de comportamiento.
-3. **IA Explicable (Decision Tree)**: Modelo supervisado para extraer reglas lógicas y validar la segmentación con una división de datos 70/30.
-4. **Optimización de Rendimiento**: Ingesta de datos vía CSV con almacenamiento en caché (`@st.cache_data`) para respuestas en milisegundos.
+1. **RFM Engineering**: Data processing to calculate Recency, Frequency, and Monetary value per customer.  
+2. **Unsupervised Learning (K-Means)**: Discovery of 4 natural behavior clusters.  
+3. **Explainable AI (Decision Tree)**: Supervised model to extract logical rules and validate segmentation with a 70/30 data split.  
+4. **Performance Optimization**: Data ingestion via CSV with caching (`@st.cache_data`) for millisecond response times.
 
-## Resultados de Impacto (KPIs)
+## Impact Results (KPIs)
 
-- **Exactitud del Modelo (Accuracy)**: 90.1% en la clasificación de clientes nuevos.
-- **Alcance del Análisis**: 5,708 clientes únicos identificados.
-- **Ventas Totales Analizadas**: $7,492,725.
-- **Ticket Promedio Global**: $1,312.67.
-- **Segmentación Crítica**: Identificación de 1,017 clientes VIP que sostienen la rentabilidad del negocio.
+- **Model Accuracy**: 90.1% in classifying new customers.  
+- **Analysis Scope**: 5,708 unique customers identified.  
+- **Total Sales Analyzed**: $7,492,725.  
+- **Global Average Ticket**: $1,312.67.  
+- **Critical Segmentation**: Identification of 1,017 VIP customers sustaining business profitability.
 
-##  Tecnologías Utilizadas
+## Technologies Used
 
-- **Lenguaje**: Python 3.9+
-- **Análisis de Datos**: Pandas, Numpy
-- **Machine Learning**: Scikit-Learn (KMeans, DecisionTreeClassifier)
-- **Visualización**: Plotly Express, Matplotlib
-- **Interfaz**: Streamlit (Layout basado en Tabs corporativos)
+- **Language**: Python 3.9+  
+- **Data Analysis**: Pandas, Numpy  
+- **Machine Learning**: Scikit-Learn (KMeans, DecisionTreeClassifier)  
+- **Visualization**: Plotly Express, Matplotlib  
+- **Interface**: Streamlit (corporate tab-based layout)
 
-##  Estructura del Repositorio
+## Repository Structure
 
 ```
 IA-BOOTCAMP/
@@ -41,39 +41,33 @@ IA-BOOTCAMP/
 └── README.md            # Documentación estratégica
 ```
 
-## ⏱️ Ejecución del Sprint (Scrum)
+## Sprint Execution (Scrum)
 
-- **11:00 AM**: Ingesta de datos y limpieza de outliers.
-- **01:00 PM**: Desarrollo del motor RFM y Clustering.
-- **03:00 PM**: Entrenamiento del modelo supervisado y validación de métricas.
-- **04:30 PM**: Pulido de UI/UX y optimización de carga.
+- **11:00 AM**: Data ingestion and outlier cleaning.  
+- **01:00 PM**: Development of RFM engine and clustering.  
+- **03:00 PM**: Training of supervised model and metric validation.  
+- **04:30 PM**: UI/UX refinement and load optimization.
 
-## 🏁 Cómo Ejecutar el Proyecto
+## How to Run the Project
 
-1. **Clona el repositorio**:
+1. **Clone the repository**:  
    ```bash
-   git clone <url-del-repositorio>
+   git clone <repository-url>
    cd IA-BOOTCAMP
-   ```
+Install dependencies:
 
-2. **Instala las dependencias**:
-   ```bash
+```bash
    pip install -r requirements.txt
    ```
+Run the application:
 
-3. **Ejecuta la aplicación**:
-   ```bash
+```bash
    streamlit run app.py
    ```
+Contributions
+Contributions are welcome. Please open an issue to discuss major changes before submitting a pull request.
 
-## 👥 Contribuciones
+License
+This project was developed for educational purposes during a corporate bootcamp.
 
-Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios mayores antes de crear un pull request.
-
-##  Licencia
-
-Este proyecto fue desarrollado con fines educativos durante un bootcamp empresarial.
-
----
-
-⭐ Si este proyecto te resultó útil, considera darle una estrella en GitHub
+If you found this project useful, consider giving it a star on GitHub.
