@@ -51,16 +51,16 @@ IA-BOOTCAMP/
 ## How to Run the Project
 
 1. **Clone the repository**:  
-   ```bash
-   git clone <repository-url>
+```bash
+   git clone <url-del-repositorio>
    cd IA-BOOTCAMP
-Install dependencies:
+   ```
 
+Install dependencies:
 ```bash
    pip install -r requirements.txt
    ```
 Run the application:
-
 ```bash
    streamlit run app.py
    ```
